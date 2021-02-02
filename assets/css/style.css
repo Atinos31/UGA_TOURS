@@ -263,11 +263,63 @@ nav .navbar-toggler{
     margin-left: 3em;
     padding: 1em 3em;
     display:inline-block;
+    color:#fff;
+    background: rgba(0,0,20,0.8);
     border-radius: 8px;
+    transition: .8s;
+}
+
+.btn-dark:hover{
+    color:#000 ;
+    background: #fff;
+}
+
+/* TOURS SECTION */
+#tours{
+    padding:2em 1em 1em;
+    margin: 0 auto;
+}
+#tours h2{
+    text-transform: capitalize;
+    text-align: center;
+    color: #084d4d;
+    margin:2em 0;
+}
+
+#tours h4{
+    text-transform: uppercase;
 }
 
 
+#tours .price{
+    font-weight: 600;
+}
+.rating{
+    margin-left: 30px;
+    margin-top: -80px;
+    float: right;
+}
 
+.rating .fa{
+    color: orange;
+
+}
+
+.booking-btn{
+    margin-top:2em;
+    margin-bottom: 2em;
+    display:flex;
+    padding: 1em 3em;
+    color:#fff;
+    background: rgba(0,0,20,0.8);
+    border-radius: 8px;
+    transition: .8s;
+}
+
+.booking-btn:hover{
+    background: #fff;
+    color:#000 ;
+}
 
 
 

@@ -1,6 +1,6 @@
 <h1 align="left">UGA TOURS</h1>
 
-[View the live project here.](https://atinos31.github.io/ugatours/)
+[View the live project here.](https://atinos31.github.io/UGA_TOURS/)
 
 This is a fictional travel website based in Uganda.IMobile first approach design be  fully responsive and accessible on a range of devices, making it easy to navigate for potential clients.
 
@@ -161,11 +161,12 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 ### Media
 
--   images are from pexels, 
+-   images are from pexels and unsplash.
 
 ### Acknowledgements
 
 -   My Mentor for continuous helpful feedback.
--    full stack Wattsapp group
--  tutor support
+-   Full stack Wattsapp group
+-  Tutor support
+-  Slack
 
