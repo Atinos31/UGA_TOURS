@@ -204,17 +204,73 @@ nav .navbar-toggler{
 .sub-btn:hover{
     color: #e84610;
     background: #aaa;
+}
+
+@media screen and(max-width:600px){
+    .newsletter{
+        padding: 30px;
+    }
+
+    .text-content h3{
+        font-size: 8px;
+    }
+}
+
+/*--------------------------------------------------------------------------about section-------------*/
+#about{
+    background: #fff;
+    color:#000;
+    display:block;
+    margin: 0 auto;
+    margin-left: 1em;
+    padding-top: 2em;
+}
+#about p{
+    padding-top: 0.5em;
+    color: #000;
+    line-height: 1.5;
+    margin: 3em 2em;
 
 }
+#about .img-fluid{
+    height:auto;
+    max-width: 100%;
+    margin-top: 3em;
+}
+#about .content-title{
+    text-transform: uppercase;
+    margin-top:1em;
+    margin-bottom: .5em;
+    text-align: center;
+  
+}
+
+#about h3{
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+}
+.short-line-divider{
+    width: 15%;
+    background: #e84610;
+    height: 2px;
+    margin: 0 auto;
+    border-radius: 2px;
+   
+}
+
+.btn-dark{
+    margin-top: 1.5em; 
+    margin-left: 3em;
+    padding: 1em 3em;
+    display:inline-block;
+    border-radius: 8px;
+}
+
+
+
+
+
+
     
-
-
-
-
-
-
-
-
-
 
 
