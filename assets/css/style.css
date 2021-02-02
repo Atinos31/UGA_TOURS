@@ -162,6 +162,52 @@ nav .navbar-toggler{
     }
 }
 
+/* ÑEWSLETTER SECTION */
+.newsletter{
+    padding: 50px;
+    color: #fff;
+    background:rgba(0,0,20,0.8);
+
+}
+
+.text-content{
+    max-width:768px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.text-content h3{
+    color: #fff;
+    margin-bottom: 25px;
+}
+
+.form-control{
+    height: 38px;
+    border-color:#fff;
+}
+
+.form-control:focus{
+    box-shadow: none;
+    border: 1px solid rgba(0,0,20,0.8);
+}
+
+.sub-btn{
+    min-height: 38px;
+    background: #e84610;
+    font-weight: 600;
+    color: #fff;
+    border: none;
+    padding: 0 1em;
+    transition: .6s;
+}
+
+.sub-btn:hover{
+    color: #e84610;
+    background: #aaa;
+
+}
+    
+
 
 
 
