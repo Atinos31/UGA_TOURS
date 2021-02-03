@@ -224,7 +224,7 @@ nav .navbar-toggler{
     display:block;
     margin: 0 auto;
     margin-left: 1em;
-    padding-top: 2em;
+    padding:2em 1em;
 }
 #about p{
     padding-top: 0.5em;
@@ -286,7 +286,7 @@ nav .navbar-toggler{
 }
 /* TOURS SECTION */
 #tours{
-    padding:2em 1em 1em;
+    padding:2.5em 1em;
     margin: 0 auto;
 }
 #tours h2{
@@ -394,6 +394,24 @@ nav .navbar-toggler{
     margin: 1.5em 0;
 }
 
+/* GALLERY SECTION */
+#gallery h2{
+    text-align: center;
+    margin: 0 auto;
+    padding: 2em 0;
+}
+
+#gallery{
+    padding: 2em 1em;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.img-container > img{
+    margin-bottom: 20px;
+    width: 100%;
+    vertical-align: middle;
+}
 
 
 
