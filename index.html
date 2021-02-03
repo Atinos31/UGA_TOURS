@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compartible" content="ie=edge">
     <meta name="description" content=" safari travel agency website base in uganda">
-    <meta name="keywords" content="affordable travel, safari tours, african holiday">
-    <meta name="author" content="Sandra atino">
+    <meta name="keywords" content="affordable travel, safari tours, african holidays">
+    <meta name="author" content="Sandra Atino">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/hover-min.css">
+    <link rel="stylesheet" href="https://cdn.tutorialjinni.com/hover.css/2.3.1/css/hover-min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>UGA TOURS | WELCOME</title>
 
@@ -18,26 +19,26 @@
 <!-- Main Navbar -->
       <!--MAIN NAVIGATION -->
    <nav class="navbar navbar-expand-sm navbar-dark  bg-dark fixed-top">
-    <div class="container-fluid">
+    <div class="container">
   <a class="navbar-brand"  style="font-style: italic; font-size:2em;" href="index.html"><i class="fa fa-plane-departure" aria-hidden="true" style="font-size: 1.5em;"></i> <span style="color:#e84610;font-weight: 600;"> UGA </span>Tours</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+  <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNavDropdown">
     <ul class="navbar-nav  ml-auto">
-      <li class="nav-item  px-3 active">
+      <li class="nav-item  mr-2 active">
         <a class="nav-link" aria-current="page" href="#showcase" style="color: #e84610!important; font-size: 1.2em;">Home </a>
       </li>
-      <li class="nav-item px-2">
+      <li class="nav-item mr-2">
         <a class="nav-link" href="#about">About</a>
       </li>
-      <li class="nav-item px-2">
+      <li class="nav-item mr-2">
         <a class="nav-link" href="#tours">TOURS</a>
       </li>
-      <li class="nav-item px-2">
+      <li class="nav-item mr-2">
         <a class="nav-link" href="#gallery">Gallery</a>
       </li>
-      <li class="nav-item px-2">
+      <li class="nav-item mr-2">
         <a class="nav-link" href="#contact">Contact</a>
       </li>
       </ul>
@@ -58,7 +59,7 @@
           <div class="carousel-inner">
               <div class="carousel-item active">
                   <img src="assets/images/slide1.jpg" alt="three persons happily jumping up high in the air at a sea side." class="img-fluid w-100">
-                  <div class="carousel-caption text-center">
+                  <div class="carousel-caption text-center ">
                       <h3>NEVER STOP EXPLORING</h3>
                       <p class="lead"> Enjoy The Beautiful beaches  with clear water</p>
                       <button class="btn btn-explore">Explore</button>
@@ -140,7 +141,7 @@
       <div class="container">
           <div class="row">
               <div class="col-md-4  col-xs-12">
-                  <img src="assets/images/glide1.jpg" class="hvr-float-shadow" alt="2 persons riding on a red and yellow parachute-img from unsplash-edgar laureano" width="250" height="250">
+                  <img src="assets/images/glide1.jpg" class="hvr-float-shadow img-fluid" alt="2 persons riding on a red and yellow parachute-img from unsplash-edgar laureano" width="250" height="250">
                   <h4>Paragliding</h4>
                   <div class="price">
                       <p class="lead">$599</p>
@@ -156,7 +157,7 @@
                   </div>
               </div>
               <div class="col-md-4 col-xs-12">
-                  <img src="assets/images/zebra.jpg" class="hvr-float-shadow" alt="three zebras standing on grass fields" width="250" height="250">
+                  <img src="assets/images/zebra.jpg" class="hvr-float-shadow img-fluid" alt="three zebras standing on grass fields" width="250" height="250">
                   <div class="price">
                       <h4>Wildlife</h4>
                       <p class="lead">$799</p>
@@ -171,7 +172,7 @@
                   </div>
               </div>
               <div class="col-md-4 col-xs-12">
-                  <img src="assets/images/kayak.jpg" class="hvr-float-shadow" alt="four assorted color kayaks on the sea shore" width="250" height="250">
+                  <img src="assets/images/kayak.jpg" class="hvr-float-shadow img-fluid" alt="four assorted color kayaks on the sea shore" width="250" height="250">
                   <h4>kayaking</h4>
                   <div class="price">
                       <p class="lead">$699</p>
@@ -188,6 +189,23 @@
           </div>
       </div>
   </section>
+
+  <!-- PROMOTION SECTION -->
+<section class="promotion">
+          <div class="promotion-highlights">
+              <div class="container">
+                  <div class="row">
+                      <div class="col-md-7">
+                          <h3 style="color:#fff;"> Get 40% on top destinations</h3>
+                          <p style="color:#fff;">Book your first travel package and get 40% discount.</p>
+                      </div>
+                      <div class="col-md-3">
+                          <button type="button" class="book-btn">Book Now</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
     <!--bootstrap Js files -->
     <!-- jQuery library -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -199,7 +217,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script>
    $('.carousel').carousel({
-        interval : 3000,
+        interval : 4000,
         pause : 'hover'
     });
 </script> 
