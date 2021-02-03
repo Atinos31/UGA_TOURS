@@ -25,10 +25,18 @@ This is a fictional travel website based in Uganda.IMobile first approach design
 
 -   ### Design
     -   #### Colour Scheme
-        (https://coolors.co/022b3a-1f7a8c-bfdbf7-e1e5f2-ffffff)
+      I decided to choose a subtle color scheme, easy on the eyes with a modern touch.
+       -  #084d4d4d-teal.
+       - #e84610-orange
+       - rgba(0,0,20,0.5); -grey
+       - #fff -white
+        - #000 -black
     -   #### Typography
+         - @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:ital,wght@0,100;0,300;0,700;0,900;1,900&display=swap');
+
     -   #### Imagery
         
+       - All images used are from pexels and unsplash.        
 
 *   ### Wireframes
 
@@ -91,8 +99,9 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 - footer elements all sqeezed in together.
 had to add in some padding to space them eaqually.
 - issue with color contrast. 
-- hover on images, blocks out some content.
+- hover on images, blocks out some content- had to use hover-css and change the class.
 -issue with open tags not being closed thereby misaligment of content.
+- on mobile screen navigation menu opens on top on slider images.. due to class fixed-top.(changed fixed-top to sticky-top)
 
 ## Deployment
 

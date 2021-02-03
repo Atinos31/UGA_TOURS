@@ -34,7 +34,7 @@ h1,h2,h3,h4{
 }
 
 p{
-    color:#000;
+    color:#fff;
 }
 /* MAIN NAVIGATION */
 
@@ -92,6 +92,7 @@ nav .navbar-toggler{
 .navbar-toggler-icon:checked ~ nav{
     outline:none!important;
 }
+
 
 /* SLIDER HERO IMAGE */
 #travel-slides{
@@ -216,7 +217,7 @@ nav .navbar-toggler{
     }
 }
 
-/*--------------------------------------------------------------------------about section-------------*/
+/* ABOUT SECTION */
 #about{
     background: #fff;
     color:#000;
@@ -291,7 +292,7 @@ nav .navbar-toggler{
 #tours h2{
     text-transform: capitalize;
     text-align: center;
-    color: #084d4d;
+    color: #000;
     margin:2em 0;
 }
 
@@ -362,6 +363,38 @@ nav .navbar-toggler{
     margin-top: 1.25em;
     transition: .8s;
 }
+
+/* USER FEEDBACK */
+
+.user-feedback{
+    padding: 6em 0;
+    
+}
+
+.user-review{
+    text-align: center;
+    padding-bottom: 2em;
+    margin: 1em;
+    background: #f4f4f4;
+    bottom: 0;
+}
+
+.user-review p{
+    padding:1.5em;
+    color: #000;
+}
+
+.user-review img{
+    border-radius: 50%;
+    padding: 2em;
+}
+
+.user-feedback h2{
+    text-align: center;
+    margin: 1.5em 0;
+}
+
+
 
 
 

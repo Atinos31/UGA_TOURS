@@ -18,7 +18,7 @@
 <body>  
 <!-- Main Navbar -->
       <!--MAIN NAVIGATION -->
-   <nav class="navbar navbar-expand-sm navbar-dark  bg-dark fixed-top">
+   <nav class="navbar navbar-expand-sm navbar-dark  bg-dark sticky-top">
     <div class="container">
   <a class="navbar-brand"  style="font-style: italic; font-size:2em;" href="index.html"><i class="fa fa-plane-departure" aria-hidden="true" style="font-size: 1.5em;"></i> <span style="color:#e84610;font-weight: 600;"> UGA </span>Tours</a>
   <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,8 +45,6 @@
       </div>
        </div>
    </nav>
-
-<hr>
   <!-- HERO SLIDER SECTION -->
   <!-- code from bootstrap customised to fit needs -->
   <section id="home">
@@ -137,7 +135,7 @@
          
 <!-- TOURS SECTION -->
   <section id="tours">
-      <h2> <i class="fa fa-map"></i> POPULAR TOURS</h2>
+      <h2> <i class="fas fa-map-marked-alt" aria-hidden="true"></i> POPULAR TOURS</h2>
       <div class="container">
           <div class="row">
               <div class="col-md-4  col-xs-12">
@@ -152,7 +150,7 @@
                           <i class="fa fa-star" aria-hidden="true"></i>
                           <i class="fa fa-star-half" aria-hidden="true"></i>
                          </p>
-                          <button class="booking-btn">Book Now</button>
+                          <a class="booking-btn" href="#" rel="noopener">Book Now</a>
                       </div>
                   </div>
               </div>
@@ -167,7 +165,7 @@
                           <i class="fa fa-star" aria-hidden="true"></i>
                           <i class="fa fa-star" aria-hidden="true"></i>
                           <i class="fa fa-star" aria-hidden="true"></i></p>
-                          <button class="booking-btn">Book Now</button>
+                          <a class="booking-btn" href="#" rel="noopener">Book Now</a>
                       </div>
                   </div>
               </div>
@@ -182,7 +180,7 @@
                           <i class="fa fa-star" aria-hidden="true"></i>
                           <i class="fa fa-star" aria-hidden="true"></i>
                           <i class="fa fa-star-half" aria-hidden="true"></i></p>
-                          <button class="booking-btn">Book Now</button>
+                          <a class="booking-btn" href="#" rel="noopener">Book Now</a>
                       </div>
                   </div>
               </div>
@@ -200,12 +198,52 @@
                           <p style="color:#fff;">Book your first travel package and get 40% discount.</p>
                       </div>
                       <div class="col-md-3">
-                          <button type="button" class="book-btn">Book Now</button>
+                          <a type="button" class="book-btn" href="#" rel="noopener">Book Now</a>
                       </div>
                   </div>
               </div>
           </div>
       </section>
+
+<!-- USER FEEDBACK-->
+<section class="user-feedback">
+    <h2>User Reviews</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="user-review">
+                    <div class="quotes"><p style="font-size: 1em;"><i class="fa fa-quote-right" aria-hidden="true"></i></p>
+                    <p>This is the best travel agency so far that i have gotten to travel with. Great agency,great service, I recommend it 100%. </p>
+                         <h5>Yung Lee</h5> <small>China</small>
+                         <img src="assets/images/review1.jpg" alt=" asian looking lady with green painted hair wearing sunglasses" class="img-fluid" width="240" height="280">
+                </div>
+            </div>
+            </div>
+            <div class="col-md-4">
+                <div class="user-review">
+                    <div class="quotes"><p><i class="fa fa-quote-right" aria-hidden="true"></i></p>
+                    <p>After trying quite a few travel agencies in the past, I am pleased to acknowledge that Uga Tours is the best so far. 
+                         </p>
+                         <h5>Grace Jones</h5> <small>South Africa</small>
+                         <img src="assets/images/review2.jpg" alt="an african lady with a head scarf smiling" class="img-fluid" width="240" height="280">
+                </div>
+            </div>
+            </div>
+            <div class="col-md-4">
+                <div class="user-review">
+                    <div class="quotes"><p><i class="fa fa-quote-right" aria-hidden="true"></i></p></div>
+                    <p>Best Prices!! Customer Service for Help at airport perfect! If the flight is as great as the rest it will be a perfect trip!. </p>
+                         <h5>Ben Darcy</h5> <small>New York</small>
+                         <img src="assets/images/review3.jpg" alt="a caucasian man wearing glasses smiling" class="img-fluid" width="240" height="280">
+                </div>
+            </div>
+            </div>
+        </div>
+</section>
+<hr>
+
+<!-- GALLERY SECTION -->
+
     <!--bootstrap Js files -->
     <!-- jQuery library -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
