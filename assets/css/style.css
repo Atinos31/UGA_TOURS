@@ -497,6 +497,63 @@ nav .navbar-toggler{
     margin: 2em 1em;
 }
 
+
+/* FOOTER */
+.footer{
+    width: 100%;
+    height: auto;
+    padding: 60px 20px;
+    background-color: #182c39;
+    color:#fff;
+    margin: 3em auto;
+    text-align: center;
+}
+.footer-divider{
+    background: #35393e;
+}
+.footer i{
+    color:#fff;
+    margin-right: .5em;
+   
+}
+
+.footer i:hover{
+    color:#e84610;
+}
+.footer p{
+    color: #fff;
+    
+    font-size:0.96em;
+    padding: 0.4em;
+    line-height: 1.2;
+    letter-spacing: normal;  
+
+}
+
+.social-networks i{
+    font-size: 30px;
+}
+.footer .copyright{
+    text-align: center;
+}
+
+.footer h4{
+    text-transform: uppercase;
+    margin-top:0.938em;
+    margin-bottom:1.6em;
+    text-decoration: none!important;
+}
+
+.footer .fa-instagram{
+    background: none!important;
+}
+
+.footer .fa-twitter{
+    background: none!important;
+}
+
+
+
     
 
 
