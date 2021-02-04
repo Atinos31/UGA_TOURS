@@ -183,7 +183,7 @@ nav .navbar-toggler{
 }
 
 .form-control{
-    height: 38px;
+    height: 40px;
     border-color:#fff;
 }
 
@@ -193,18 +193,19 @@ nav .navbar-toggler{
 }
 
 .sub-btn{
-    min-height: 38px;
+    min-height: 40px;
     background: #e84610;
     font-weight: 600;
     color: #fff;
     border: none;
-    padding: 0 1em;
+    padding: .5em 1em;
     transition: .6s;
 }
 
 .sub-btn:hover{
     color: #e84610;
     background: #aaa;
+    text-decoration: none;
 }
 
 @media screen and(max-width:600px){
@@ -273,6 +274,7 @@ nav .navbar-toggler{
 .btn-dark:hover{
     color:#000 ;
     background: #fff;
+    text-decoration: none;
 }
 
 @media(min-width:768px){
