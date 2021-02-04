@@ -269,6 +269,7 @@ nav .navbar-toggler{
     background: rgba(0,0,20,0.8);
     border-radius: 8px;
     transition: .8s;
+    border: 1px solid rgba(0,0,20,0.8);
 }
 
 .btn-dark:hover{
