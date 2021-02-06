@@ -43,7 +43,7 @@ p{
 header{
     width: 100%;
     padding: 1em 0;
-    background: #084d4d;
+    background:#fff;
     text-align: center;
     position: fixed;  
     z-index: 999;
@@ -52,75 +52,85 @@ header{
 .brand{
   font-style: italic;
   font-weight: 400;
-  color: #fff;
+  color: #333;
   font-size: 1.5em;
   float: left;
   margin-left: 1em;
 }
 
-.brand i{
+.nav-brand i .fa{
     font-size: 1.8em;
+    color:slategrey;
+
 }
 
-.highlight{
-    color:ffd300;
-}
 
 nav{
     margin: 0;
 }
+.nav-item{
+    margin-left: 1em;
 
-.navbar-dark .navbar-nav .nav-link {
-    color:#fff!important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color:#000!important;
     display: block;
     padding: .5rem 1rem;
     text-transform: uppercase;
+    font-weight: 400;
   
 }
 
-.navbar-dark .navbar-nav .nav-link:hover{
-    color:#ffd300!important;
+.hvr-overline-from-left{
+    color: #fff;
 }
 
-.bg-dark{
-    background:#084d4d!important;
+.bg-light{
+    background:#fff!important;
     }
 
-nav .navbar-toggler{
-    color:#fff!important;
-    border: 0!important;
+.navbar-toggler {
+    color: black;
+  border: none;
+  background: transparent !important;
 }
+.navbar-toggle:checked {
+  border: none;
+  background: transparent !important;}
 
-.navbar-toggler-icon:checked ~ nav{
-    outline:none!important;
+
+@media screen and(max-width:500){
+    .nav-link{
+        margin-bottom: 2em;
+    }
 }
-
 
 /* SLIDER HERO IMAGE */
 #travel-slides{
     height:auto;
     min-width: 100%;
     overflow: hidden;
+    opacity: 0.9;
   
 }
 
- .btn-explore{
-    background: #e84610!important;
-    color: #fff;
+ .btn-login{
+    width:120px;
+    padding:8px 0;
+    outline: none;
     font-weight: 500;
-    padding: 10px 20px;
-    font-size: 20px;
+    border-radius: 50px;
+    background:#e84d1b;
+    color:#fff;
+    float:right;
     cursor: pointer;
-    margin: 10px;
-    transition: 0.8s;
-    border-radius: 8px;
-    z-index: 2;
-
+    transition: .8s;
 }
 
-.btn-explore:hover{
-     color: #e84610;
-     background: #fff!important;
+.btn-login:hover{
+    color: #e84d1b;
+    background: #fff;
 }
 
 .carousel-indicators li {
@@ -130,21 +140,27 @@ nav .navbar-toggler{
 
 }
 .carousel-caption{
-    bottom:120px;
-    left: 50px;
-    background: rgba(0,0,20,0.5);
-    max-width: 40%;
-    padding: 4em 1em;
-    border-radius: 8px;
-    text-align: center;
+  
+    background: rgba(0,0,20,0.8);
+    padding: 4em ;
+     position: absolute;
+     top: 80%;
+     left: 40%;
+     transform: translate(-50%, -50%);
+    z-index: 2;
 
 }
 @media (max-width:768px) {
     .carousel-caption{
-        left:0 ;
-        bottom: 0!important;
-        text-align: left;
-        margin:2em 5em 0 0;
+        position: absolute;
+        background: none;
+       top: 60%;
+       left: 60%;
+       transform: translate(-50%, -50%);
+    }
+
+    #travel-slides{
+        opacity: 0.9;
     }
     
    .carousel-indicators li {
@@ -154,20 +170,15 @@ nav .navbar-toggler{
    }
    
     .carousel-caption h2{
-        font-size: 18px;
-        text-transform:capitalize;
-        left: 0;
+       display: none;
+        
     }
     .carousel-caption p{
-        display: none;
+        display: flex;
+        flex-direction: row;
     }
 
-    .btn-explore{
-        padding:4px 7px;
-        font-size: 14px;
-        z-index: 2;
-        bottom: -3px;
-    }
+    
 }
 
 /* ÑEWSLETTER SECTION */
@@ -204,7 +215,7 @@ nav .navbar-toggler{
 
 .sub-btn{
     min-height: 40px;
-    background: #e84610;
+    background: #e84d1b;
     font-weight: 600;
     color: #fff;
     border: none;
@@ -213,10 +224,10 @@ nav .navbar-toggler{
 }
 
 .sub-btn:hover{
-    color: #e84610;
-    background: #fff;
+    color: #fff;
+    background: #4a4a4a;
     text-decoration: none;
-    border-left: .5px solid #e84610;
+    border-left: .5px solid #4a4a4a;
 }
 
 @media screen and(max-width:600px){
@@ -275,29 +286,28 @@ nav .navbar-toggler{
    
 }
 
-.btn-dark{
+.btn-about{
     display: inline-block;
-     font-size: 12px;
+    font-size: 14px;
     line-height: 160%;
     text-decoration: none;
     font-weight: 600;
-    border: 1px solid transparent;
+    background: #fafafa;
+    border: 1px solid #fafafa;
     border-radius: 4px;
-    box-sizing: border-box;
     padding: 10px 20px;
     cursor: pointer;
     text-transform: uppercase;
     -webkit-box-align: center;
     align-items: center;
-    font-family: "Work Sans", sans-serif;
-    background-color: transparent;
-    color: rgb(74, 80, 187);
+    color:#0492c2;
 }
 
 
-.btn-dark:hover{
-    color:#000 ;
-    background: #fff;
+.btn-about:hover{
+    background: #0492c2;
+    color: #f4f4f4;
+    border: 1px solid #fafafa;
     text-decoration: none;
 }
 
@@ -316,6 +326,8 @@ nav .navbar-toggler{
         width: 100%;
     }
 }
+
+
 /* TOURS SECTION */
 #tours{
     padding:2.5em 1em;
@@ -342,25 +354,25 @@ nav .navbar-toggler{
 }
 
 .rating .fa{
-    color: orange;
+    color:#e84610;
 
 }
 
 .booking-btn{
     margin-top:2em;
-    margin-bottom: 2em;
-    display:flex;
+    margin-bottom: 6em;
+    display:block;
     padding: 1em 3em;
     color:#fff;
-    background: rgba(0,0,20,0.8);
+    background: #182c39;
     border-radius: 8px;
     transition: .8s;
-    border: 1px solid rgba(0,0,20,0.8);
+    border: 1px solid #182c39;
 }
 
 .booking-btn:hover{
     background: #fff;
-    color:#000 ;
+    color:#182c39 ;
     text-decoration: none;
 }
 
@@ -467,7 +479,7 @@ nav .navbar-toggler{
 
 .contact-title{
     font-size: 2em;
-    color: #084d4d;
+    color: #182c39;
     padding-bottom: 1em;
     margin:1em 0;
     line-height: 1.2;
@@ -485,7 +497,7 @@ nav .navbar-toggler{
     width:100%;
     height: 2em;
     border-width: 0 0 2px 0;
-    border-color: #084d4d;
+    border-color: #182c39;
     font-size:1.13em;
     line-height: 1.6;
     font-weight: 400;
@@ -503,30 +515,32 @@ nav .navbar-toggler{
     left:20px;
     bottom: 11px;
     font-size: 1.2em;
-    color: #084d4d;
+    color: #182c39;
     cursor: text;
     transition: transform 0.3s ease-in-out;
 }
 
 .submit-btn{
-    display: block;
-    background: #084d4d;
+    display:block;
+    background: #e84610;
     color: #fff;
     font-size: 1em;
-    letter-spacing: 2px;
-    padding: 1em 3em;
+    font-weight: 600;
+    padding: 1em 2.5em;
     border-radius: 8px;
     margin: 0 auto;
     width: 300px;
+    text-align: center;
+    align-items: center;
     cursor: pointer;
     border: 0;
     transition: .8s;
 }
 
 .submit-btn:hover{
-    color: #084d4d;
+    color: #e84610;
     background: #fff;
-    border: 1px solid #084d4d;
+    border: 1px solid #e84610;
 }
 
 @media screen and(max-width:500px){
@@ -544,8 +558,10 @@ nav .navbar-toggler{
 
 
 /* SOCIAL ICONS */
-.bg-teal{
-    background-color: #084d4d;
+.social-networks{
+    margin-top: 2em;
+    padding-top: 1em;
+    margin-bottom: 0!important;
 }
 
 .social h4{
@@ -569,9 +585,11 @@ nav .navbar-toggler{
 .footer i{
     color:#fff;
     margin-right: 1em;
-   
 }
 
+.footer a{
+    color: #fff;
+}
 
 
 .footer p{

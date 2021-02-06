@@ -6,7 +6,33 @@ This is a fictional travel website based in Uganda.IMobile first approach design
 
 <h2 align="center"><mockup></h2>
 
+## Table of contents
+
+1. [**USER_EXPERIENCE**](#user-experience)
+    - [**Scope**](#scope)
+    - [**Structure**](#structure)
+    - [**Skeleton**](#skeleton)
+    - [**Surface**](#surface)
+    
+2. [**Features**](#features)
+    - [**Existing features**](#existing-features)
+    - [**Features left to implement**](#features-left-to-implement)
+
+3. [**Technologies Used**](#technologies-used)
+
+4. [**Testing**](#testing)
+    - [**Testing documentation can be found here in a seperate file**](TESTING.md)
+
+5. [**Deployment**](#deployment)
+
+6. [**Credits**](#credits)
+    - [**Content**](#content)
+    - [**Resources**](#resources)
+    - [**Media**](#media)
+    - [**Acknowledgements**](#acknowledgements)
+
 ## User Experience (UX)
+## 
 
 -   ### User stories
 
@@ -19,32 +45,38 @@ This is a fictional travel website based in Uganda.IMobile first approach design
 
        -  a. As a returning visitor i want to be able to reachout for more information when need.
        -  b. As a returning visitor i want to be able to see the latest offers available.
+       -  c. As a returning visitor i want to be able to sign in to the site.
     -   #### Frequent User Goals
        -  a. As a frequent user i want to be able to see latest promotions.
        -  b.  As a frequent User i want to signup to the newsletter so that i am updated about new propositions.
 
 -   ### Design
     -   #### Colour Scheme
-      I decided to choose a subtle color scheme, easy on the eyes with a modern touch.
-       -  #084d4d4d-teal.
-       - #e84610-orange
-       - rgba(0,0,20,0.5); -grey
-       - #fff -white
-        - #000 -black
+      I decided to choose a subtle color scheme, several shades of grey. easy on the eyes with a modern touch.
+       - 
+       - #182c39 - This grey colour is used for the logo icon, button hover backgrounds, footer background and text-color in the contact section..
+       - #4a4a4a -this shade of grey is used in the newsletter subscribe button in its hover state as a background color
+       - #e84d1b-This orange colour is used in the login button in the header section,subscribe button in the newsletter section &submit button in the contact section.
+       - #f4f4fa -this shade of grey is used in the  user feedback background section.
+       - #888888 - this shade of grey is used for the box shadows on the user reviews container and contact container.
+       - #fff -white is used for footer fonts and icons, fonts on the promotion section and booking buttons on tours section.
+        - #000 - i used black for paragraphs in the about section and for the nav-links
     -   #### Typography
-         - @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:ital,wght@0,100;0,300;0,700;0,900;1,900&display=swap');
-
+        - 
+```html
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:ital,wght@0,100;0,300;0,700;0,900;1,900&display=swap">
+```
     -   #### Imagery
         
        - All images used are from pexels and unsplash.        
 
 *   ### Wireframes
 
-    -   Mobile Wireframe - [View]()
+    -   Mobile Wireframe - ![mobile](assets/images/mobile.png)
 
-    -   Tablette Wireframe - [View](https://github.com/)
+    -   Tablette Wireframe - ![tablette](assets/images/desktop.png)
 
-    -   Desktop Wireframe - [View](https://github.com/)
+    -   Desktop Wireframe - ![desktop](assets/images/desktop.png)
 
 ## Features
 
@@ -66,7 +98,7 @@ This is a fictional travel website based in Uganda.IMobile first approach design
     - Google fonts were used to import the 'Titillium Web' font into the style.css file which is used on all pages throughout the project.
 1. [Font Awesome:](https://fontawesome.com/)
     - Font Awesome was used on all pages throughout the website to add icons for aesthetic and UX purposes.
-1. [hover css](http://ianlunn.github.io/Hover/)
+1. [hover css](http://ianlunn.github.io/Hover/) for animations.
 1. [Git](https://git-scm.com/)
     - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
 1. [GitHub:](https://github.com/)
@@ -158,7 +190,7 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 -    [W3schhool](https://www.w3schools.com/default.asp)
 
--    [StackOverflow post](https://stackoverflow.com)
+-    [StackOverflow posts](https://stackoverflow.com)
 
 -   [Bootstrap4](https://getbootstrap.com/docs/4.4/getting-started/introduction/): Bootstrap Library used throughout the project mainly to make site responsive using the Bootstrap Grid System.
 

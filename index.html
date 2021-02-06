@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.tutorialjinni.com/hover.css/2.3.1/css/hover-min.css">
+    <link href="https://fonts.gstatic.com" rel="preconnect">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>UGA TOURS | WELCOME</title>
 
@@ -18,30 +19,32 @@
 <body>  
 <!-- Main Navbar -->
       <!--MAIN NAVIGATION -->
-   <nav class="navbar navbar-expand-sm navbar-dark  bg-dark sticky-top">
+   <nav class="navbar navbar-expand-sm navbar-light  bg-light sticky-top">
     <div class="container-fluid">
-  <a class="navbar-brand"  style="font-style: italic; font-size:2em;" href="index.html"><i class="fa fa-plane-departure" aria-hidden="true" style="font-size: 1.5em;"></i> <span style="color:yellow;font-weight: 600;"> UGA </span>Tours</a>
+  <a class="navbar-brand"  style="font-style: italic; font-size:2em;" href="index.html"><i class="fa fa-plane-departure" aria-hidden="true" style="font-size: 1.5em; color:rgba(0,0,20,0.8);"></i> <span style="color:#e84610;font-weight: 600;"> UGA </span>Tours</a>
   <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
+
   </button>
   <div class="collapse navbar-collapse" id="navbarNavDropdown">
-    <ul class="navbar-nav  ml-auto">
-      <li class="nav-item  mr-2 active">
-        <a class="nav-link" aria-current="page" href="#home" style="font-size: 1.2em;">Home </a>
+    <ul class="navbar-nav  mx-auto">
+      <li class="nav-item  mr-2">
+        <a class="nav-link hvr-overline-from-left" aria-current="page" href="#home">HOME </a>
       </li>
       <li class="nav-item mr-2">
-        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link hvr-overline-from-left" href="#about">ABOUT</a>
       </li>
       <li class="nav-item mr-2">
-        <a class="nav-link" href="#tours">TOURS</a>
+        <a class="nav-link hvr-overline-from-left" href="#tours">TOURS</a>
       </li>
       <li class="nav-item mr-2">
-        <a class="nav-link" href="#gallery">Gallery</a>
+        <a class="nav-link hvr-overline-from-left" href="#gallery">GALLERY</a>
       </li>
       <li class="nav-item mr-2">
-        <a class="nav-link" href="#contact">Contact</a>
+        <a class="nav-link hvr-overline-from-left" href="#contact">CONTACT</a>
       </li>
-      </ul>
+    </ul>
+      <button class="btn btn-lg btn-danger  btn-login hvr-forward" data-toggle="modal" data-target="#signUpModal">Login</button>
       </div>
        </div>
    </nav>
@@ -60,7 +63,7 @@
                   <div class="carousel-caption text-center ">
                       <h2>NEVER STOP EXPLORING</h2>
                       <p class="lead"> Enjoy The Beautiful beaches  with clear water</p>
-                      <a href="#tours" class="btn btn-success btn-lg" role="button">Explore</a>
+                    
                   </div>
               </div>
               <div class="carousel-item">
@@ -68,7 +71,7 @@
                   <div class="carousel-caption text-center">
                       <h2>BE RELAXED IN NATURE</h2>
                       <p class="lead"> Explore the beauty of the african jungles.</p>
-                      <a href="#tours" class="btn btn-success btn-lg" role="button">Explore</a>
+                      
                   </div>
               </div>
               <div class="carousel-item">
@@ -76,7 +79,7 @@
                   <div class="carousel-caption text-center">
                       <h2>PLEASANT SURPRISES</h2>
                       <p class="lead">Your favorite destinations at affordable prices</p>
-                      <a href="#tours" class="btn btn-success btn-lg" role="button">Explore</a>
+                    
                   </div>
               </div>
           </div>
@@ -102,13 +105,16 @@
                     <div class="input-group">
                         <input type="email" class="form-control" placeholder="Enter Your Email..." >
                         <span class="input-group-btn">
-                            <a class="sub-btn" type="submit" href="#" target="_blank">Subscribe</a></span>
+                            <a class="sub-btn" type="submit" href="#" target="_blank" >Subscribe</a></span>
                     </div>
                 </div>
             </div>
         </div>
     </div>
   </section>
+
+
+    
        <!-- Welcome section/about -->  
          <section id="about">
             <div class="container-fluid">
@@ -126,7 +132,7 @@
                   We travel the length and breadth of every destination we recommend to make sure that our expertise is based on first-hand experience and that every part of your itinerary is tried-and-tested.
                </p>
             
-            <a class="btn-dark" href="#" rel="noopener" target="_blank">Discover more   <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+            <a class="btn-about" href="#" rel="noreferrer" target="_blank">Discover more   <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
                        </div>
             </div>
             </div>
@@ -301,7 +307,7 @@
 <!-- CONTACT SECTION -->
 <section id="contact">
          <h4 class="contact-title" style="color:#084d4d;">CONTACT US</h4>
-            <div class="container-fluid">
+            <div class="container">
                 <div class="row contact-form">
                     <div class="col-lg-6 form-fieldset">
                         <input type="text" class="input-text" id="name" name="name">
@@ -330,43 +336,72 @@
                 </div>
 </section>
 
+<div class="modal" tabindex="-1" role="dialog" id="signUpModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Sign in</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="text" class="form-control" id="password" placeholder="Password">
+                        </div>
+                        <button type="submit" class="btn btn-success">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
 <!-- FOOTER SECTION -->
 <section class="footer">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-4">
                   <h5>Contact</h5>
-                  <p><i class="fa fa-phone" aria-hidden="true"></i>+ (256)774499270</p>
-                  <p><i class="fa fa-envelope" aria-hidden="true"></i>ugatours@yahoo.com</p>
-                  <p><i class="fa fa-home" aria-hidden="true"></i>1queenslane,Uganda</p>
+                  <p><i class="fa fa-phone hvr-grow-rotate" aria-hidden="true"></i>+ (256)774499270</p>
+                  <p><i class="fa fa-envelope hvr-pulse" aria-hidden="true"></i>ugatours@yahoo.com</p>
+                  <p><i class="fa fa-home hvr-pulse-grow" aria-hidden="true"></i>1queenslane,Uganda</p>
                 </div>
                 <div class="col-md-4">
                  <h5> Quick Links</h5>
-                 <p> <a href="#about">Company Info</a></p>
-                 <p><a href="#contact">Contact Us</a></p>
-                 <p><a href="#user-review">USer Reviews</a></p>
+                 <p> <a href="#about" aria-hidden="false">Company Info</a></p>
+                 <p><a href="#contact" aria-hidden="false">Contact Us</a></p>
+                 <p><a href="#user-review" aria-hidden="false">User Reviews</a></p>
                 </div>
                 <div class="col-md-4">
                     <h5>Support</h5>
-                    <p><a href="#" target="_blank" rel="noopener">FAQ</a></p>
-                    <p><a href="#" target="_blank" rel="noopener">Help desk</a></p>
+                    <p><a href="#" target="_blank" rel="noopener" aria-hidden="true">FAQ</a></p>
+                    <p><a href="#" target="_blank" rel="noopener" aria-hidden="true">Help desk</a></p>
                     <p><a href="#" target="_blank" rel="noopener">Forum</a></p>
                 </div>
             </div>
         </div>
     
 <div class="row">
-    <div class="col text-center mt-5">
-                    <i class="fab fa-facebook fa-2x m-3" href="https://www.facebook.com/" target="_blank" rel="noopener"></i>
-                    <i class="fab fa-youtube fa-2x m-3" href="https.youtube.com/" target="_blank" rel="noopener"></i>
-                    <i class="fab fa-twitter fa-2x m-3" href="https.twitter.com/" target="_blank" rel="noopener"></i>
+    <div class="col text-center social-networks">
+        <a href="https://www.facebook.com"><i class="fab fa-facebook fa-2x m-4 hvr-pulse-grow " target="_blank" aria-label="opens facebook in a new tab" rel="noreferrer"></i></a>
+        <a href="https://www.youtube.com/watch?v=KIfD0tEj1Dw"><i class="fab fa-youtube fa-2x m-4 hvr-pulse-grow" target="_blank" aria-label="opens youtube in a new tab" rel="noreferrer"></i></a>
+        <a href="https://www.twitter.com"><i class="fab fa-twitter fa-2x m-4 hvr-pulse-grow " target="_blank" aria-label="opens twitter in a new tab" rel="noreferrer"></i></a>
+        <a href="https://www.instagram.com"><i class="fab fa-instagram fa-2x m-4 hvr-pulse-grow" target="_blank" aria-label="opens instagram in a new tab" rel="noreferrer"></i></a>
+
+        
                 </div>
     </div>
     <hr class="footer-divider">
     <div class="row">
-                <div class="col text-center social-networks">
-                    <p>Copyright &copy;<a href="https://github.com/Atinos31">atinos31</a> 2021
-                        </p>
+                <div class="col text-center ">
+                    <p><small>Copyright &copy; 2021 <a class="hvr-grow" href="https://github.com/Atinos31">atinos31</a> | all rights reserved
+                     </small>  </p>
                 </div>
     </div>
 </section>
