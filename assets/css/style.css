@@ -21,6 +21,8 @@ ul{
      font-family: 'Open Sans' , sans-serif;
      line-height: 1.5;
      letter-spacing: 1.2;
+     min-height: 100vh;
+     min-width: 100vw;
  }
  img{
     height: auto;
@@ -61,7 +63,7 @@ header{
 }
 
 .highlight{
-    color:#e84610;
+    color:ffd300;
 }
 
 nav{
@@ -77,7 +79,7 @@ nav{
 }
 
 .navbar-dark .navbar-nav .nav-link:hover{
-    color: #e84610!important;
+    color:#ffd300!important;
 }
 
 .bg-dark{
@@ -105,6 +107,7 @@ nav .navbar-toggler{
  .btn-explore{
     background: #e84610!important;
     color: #fff;
+    font-weight: 500;
     padding: 10px 20px;
     font-size: 20px;
     cursor: pointer;
@@ -123,24 +126,25 @@ nav .navbar-toggler{
 .carousel-indicators li {
   width:10%;
   height: auto;
-    background: #084d4d;
+  background: #084d4d;
 
 }
 .carousel-caption{
     bottom:120px;
     left: 50px;
     background: rgba(0,0,20,0.5);
-     max-width: 40%;
+    max-width: 40%;
+    padding: 4em 1em;
     border-radius: 8px;
     text-align: center;
 
 }
 @media (max-width:768px) {
     .carousel-caption{
-        bottom: 5px;
-        left:5px ;
-        background: rgba(0,0,20,0.2);
-        
+        left:0 ;
+        bottom: 0!important;
+        text-align: left;
+        margin:2em 5em 0 0;
     }
     
    .carousel-indicators li {
@@ -149,17 +153,20 @@ nav .navbar-toggler{
      border-radius:50%;
    }
    
-    .carousel-caption h3{
-        font-size: 1em;
-        text-transform:capitalize!important;
+    .carousel-caption h2{
+        font-size: 18px;
+        text-transform:capitalize;
+        left: 0;
     }
     .carousel-caption p{
         display: none;
     }
 
     .btn-explore{
-        padding:4px 8px;
+        padding:4px 7px;
+        font-size: 14px;
         z-index: 2;
+        bottom: -3px;
     }
 }
 
@@ -177,9 +184,12 @@ nav .navbar-toggler{
     text-align: center;
 }
 
-.text-content h3{
+.subscribe{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.5em;
     color: #fff;
-    margin-bottom: 25px;
+    margin-bottom: 1.5em;
 }
 
 .form-control{
@@ -204,8 +214,9 @@ nav .navbar-toggler{
 
 .sub-btn:hover{
     color: #e84610;
-    background: #aaa;
+    background: #fff;
     text-decoration: none;
+    border-left: .5px solid #e84610;
 }
 
 @media screen and(max-width:600px){
@@ -213,8 +224,12 @@ nav .navbar-toggler{
         padding: 30px;
     }
 
-    .text-content h3{
-        font-size: 8px;
+    .text-content .subscribe {
+        font-size: 12px;
+    }
+
+    .newsletter h5{
+        display: none;
     }
 }
 
@@ -261,16 +276,24 @@ nav .navbar-toggler{
 }
 
 .btn-dark{
-    margin-top: 1.5em; 
-    margin-left: 3em;
-    padding: 1em 3em;
-    display:inline-block;
-    color:#fff;
-    background: rgba(0,0,20,0.8);
-    border-radius: 8px;
-    transition: .8s;
-    border: 1px solid rgba(0,0,20,0.8);
+    display: inline-block;
+     font-size: 12px;
+    line-height: 160%;
+    text-decoration: none;
+    font-weight: 600;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+    -webkit-box-align: center;
+    align-items: center;
+    font-family: "Work Sans", sans-serif;
+    background-color: transparent;
+    color: rgb(74, 80, 187);
 }
+
 
 .btn-dark:hover{
     color:#000 ;
@@ -281,10 +304,16 @@ nav .navbar-toggler{
 @media(min-width:768px){
        #about .content-about p{
         margin-top: 0;
-        padding-top: 0;
-        padding-bottom: 0;
-        font-size: 1.2em;
+        padding: 2em;
      
+    }
+}
+
+@media screen and (max-width:600px){
+    #about .content-about p{
+        padding: 0;
+        margin: 0 auto;
+        width: 100%;
     }
 }
 /* TOURS SECTION */
@@ -292,7 +321,7 @@ nav .navbar-toggler{
     padding:2.5em 1em;
     margin: 0 auto;
 }
-#tours h2{
+#tours h3{
     text-transform: capitalize;
     text-align: center;
     color: #000;
@@ -335,6 +364,11 @@ nav .navbar-toggler{
     text-decoration: none;
 }
 
+@media screen and(max-width:600px){
+    .booking-btn{
+        margin-bottom: 10em;
+    }
+}
 /* PROMOTION SECTION */
 .promotion{
     height: 80%;
@@ -373,6 +407,7 @@ nav .navbar-toggler{
 
 .user-feedback{
     padding: 6em 0;
+    background:#f4f4f4;
     
 }
 
@@ -380,8 +415,9 @@ nav .navbar-toggler{
     text-align: center;
     padding-bottom: 2em;
     margin: 1em;
-    background: #f4f4f4;
+    background: #fff;
     bottom: 0;
+    box-shadow: 5px 10px 8px #888888;
 }
 
 .user-review p{
@@ -394,7 +430,7 @@ nav .navbar-toggler{
     padding: 2em;
 }
 
-.user-feedback h2{
+.user-feedback h3{
     text-align: center;
     margin: 1.5em 0;
 }
@@ -418,12 +454,13 @@ nav .navbar-toggler{
     vertical-align: middle;
 }
 
+/* CONTACT SECTION */
 
 #contact{
     max-width: 768px;
-    margin: 7em auto;
+    margin: 6em auto;
     position: relative;
-    box-shadow: 2px 10px 20px 2px rgba(0,0,0,0.8);
+    box-shadow: 2px 10px 20px 2px #888;
     padding:20px  40px;
     
 }
@@ -431,15 +468,14 @@ nav .navbar-toggler{
 .contact-title{
     font-size: 2em;
     color: #084d4d;
-    padding-bottom: 1.25em;
-    margin:1.5em 0;
-    letter-spacing: 3px;
+    padding-bottom: 1em;
+    margin:1em 0;
     line-height: 1.2;
     text-align: center;
-     text-decoration: uppercase;
+    text-decoration: uppercase;
 }
 
-.contact-form .form-fieldset{
+.form-fieldset{
     position: relative;
     margin:2em 0;
 }
@@ -493,6 +529,20 @@ nav .navbar-toggler{
     border: 1px solid #084d4d;
 }
 
+@media screen and(max-width:500px){
+    #contact{
+       max-width:500px;
+       margin:0 auto;
+       padding: 10px 20px;
+    }
+
+    .contact-title{
+         padding-bottom: 0;
+         margin-bottom: 0;
+    }
+}
+
+
 /* SOCIAL ICONS */
 .bg-teal{
     background-color: #084d4d;
@@ -518,14 +568,12 @@ nav .navbar-toggler{
 }
 .footer i{
     color:#fff;
-    margin-right: .5em;
+    margin-right: 1em;
    
 }
 
-.footer i:hover{
-     color:#e84610;
 
-}
+
 .footer p{
     color: #fff;
     
@@ -539,11 +587,8 @@ nav .navbar-toggler{
 .social-networks i{
     font-size: 30px;
 }
-.footer .copyright{
-    text-align: center;
-}
 
-.footer h4{
+.footer h5{
     text-transform: uppercase;
     margin-top:0.938em;
     margin-bottom:1.6em;
