@@ -32,7 +32,6 @@ ul{
 h1,h2,h3,h4{
     font-weight: 700;
     font-family: 'Roboto' , sans-serif;
-    font-weight: 700;
 }
 
 p{
@@ -82,9 +81,6 @@ nav{
   
 }
 
-.hvr-overline-from-left{
-    color: #fff;
-}
 
 .bg-light{
     background:#fff!important;
@@ -115,6 +111,14 @@ nav{
   
 }
 
+#travel-slides h1{
+    font-size: 2em;
+    text-align: center;
+    padding-bottom: 0.5em;
+    letter-spacing: 1.5;
+    line-height: 1.5;
+}
+
  .btn-login{
     width:120px;
     padding:8px 0;
@@ -133,49 +137,58 @@ nav{
     background: #fff;
 }
 
-.carousel-indicators li {
-  width:10%;
-  height: auto;
-  background: #084d4d;
 
+.carousel-indicators li {
+    display: inline-block;
+    width: 70px;
+    height: 5px;
+    margin: 10px;
+    cursor: pointer;
+    border: none;
+    background-color: #0000ff;   
+}
+.carousel-indicators .active {
+    width: 70px;
+    height: 5px;
+    margin: 10px;
+    background-color: #e84610;
 }
 .carousel-caption{
-  
+    bottom: 100px;
+    width: 40%;
+    height: 30vh;
     background: rgba(0,0,20,0.8);
-    padding: 4em ;
      position: absolute;
-     top: 80%;
-     left: 40%;
+     top: 75%;
+     left: 50%;
      transform: translate(-50%, -50%);
     z-index: 2;
 
 }
 @media (max-width:768px) {
-    .carousel-caption{
-        position: absolute;
-        background: none;
-       top: 60%;
-       left: 60%;
-       transform: translate(-50%, -50%);
-    }
-
+   
     #travel-slides{
         opacity: 0.9;
     }
-    
-   .carousel-indicators li {
-     width: 5%;
-     height: auto;
-     border-radius:50%;
-   }
+    .carousel-caption{
+        width:80%;
+        height: 10vh;
+        background: rgba(0,0,0,0.8);
+        top:70%;
+    }
+
    
-    .carousel-caption h2{
-       display: none;
+    .carousel-caption h1{
+        font-weight: 900;
+       text-align: center;
+       font-size: 1.4em!important;
+       font-style: italic;
+       padding: 0;
+       margin: 0 auto;
         
     }
     .carousel-caption p{
-        display: flex;
-        flex-direction: row;
+     display: none;
     }
 
     
@@ -183,47 +196,51 @@ nav{
 
 /* ÑEWSLETTER SECTION */
 .newsletter{
-    padding: 50px;
+    padding: 60px 0px;
+    text-align: center;
     color: #fff;
     background:rgba(0,0,20,0.8);
 
 }
 
-.text-content{
-    max-width:768px;
-    margin: 0 auto;
-    text-align: center;
+.newsletter p {
+    font-size: 1em;
+    font-style: italic;
+    padding: 0px;
+    margin: 1em 0px 2em;
 }
 
-.subscribe{
-    text-transform: uppercase;
+
+.newsletter form {
+    background: #fff;
+    padding: 6px 10px;
+    position: relative;
+    border-radius: 50px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+.newsletter form input[type="email"] {
+    border: 0;
+    padding: 4px 8px;
+    width: calc(100% - 100px);
+}
+.newsletter form input[type="submit"] {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -2;
+    font-size: 1em;
     font-weight: 600;
-    font-size: 1.5em;
-    color: #fff;
-    margin-bottom: 1.5em;
-}
-
-.form-control{
-    height: 40px;
-    border-color:#fff;
-}
-
-.form-control:focus{
-    box-shadow: none;
-    border: 1px solid rgba(0,0,20,0.8);
-}
-
-.sub-btn{
-    min-height: 40px;
+    padding: 0 1.5em;
     background: #e84d1b;
-    font-weight: 600;
     color: #fff;
-    border: none;
-    padding: .5em 1em;
+    border: 1px solid #fff;
+    border-radius: 40px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
     transition: .6s;
 }
 
-.sub-btn:hover{
+.newsletter form input[type="submit"]:hover{
     color: #fff;
     background: #4a4a4a;
     text-decoration: none;
@@ -235,13 +252,6 @@ nav{
         padding: 30px;
     }
 
-    .text-content .subscribe {
-        font-size: 12px;
-    }
-
-    .newsletter h5{
-        display: none;
-    }
 }
 
 /* ABOUT SECTION */
@@ -292,21 +302,21 @@ nav{
     line-height: 160%;
     text-decoration: none;
     font-weight: 600;
-    background: #fafafa;
-    border: 1px solid #fafafa;
+    background: #0492c2;
+    border: 1px solid #0492c2;
     border-radius: 4px;
     padding: 10px 20px;
     cursor: pointer;
     text-transform: uppercase;
     -webkit-box-align: center;
     align-items: center;
-    color:#0492c2;
+    color:#fff;
 }
 
 
 .btn-about:hover{
-    background: #0492c2;
-    color: #f4f4f4;
+    background: #fafafa;
+    color: #0492c2;
     border: 1px solid #fafafa;
     text-decoration: none;
 }
@@ -321,9 +331,19 @@ nav{
 
 @media screen and (max-width:600px){
     #about .content-about p{
-        padding: 0;
-        margin: 0 auto;
+        padding: 0 1.5em;
+        margin: 0 1em 1em 1em;
         width: 100%;
+        font-size: 20px;
+    }
+
+    #about h3{
+        margin:1em 1em 0 1em;
+        font-size: 1.5em;
+    }
+
+    #about .about-btn{
+        margin:0 auto;
     }
 }
 
