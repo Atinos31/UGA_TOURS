@@ -1,10 +1,11 @@
 <h1 align="left">UGA TOURS</h1>
 
+ ![display from differnt screen shots](assets/images/uga-tours.png)
+
 [View the live project here.](https://atinos31.github.io/UGA_TOURS/)
 
 This is a fictional travel website based in Uganda.IMobile first approach design be  fully responsive and accessible on a range of devices, making it easy to navigate for potential clients.
 
-<h2 align="center"><mockup></h2>
 
 ## Table of contents
 
