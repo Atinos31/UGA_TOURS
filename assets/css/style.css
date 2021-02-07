@@ -22,7 +22,7 @@ ul{
      line-height: 1.5;
      letter-spacing: 1.2;
      min-height: 100vh;
-     min-width: 100vw;
+     min-width: 100%;
  }
  img{
     height: auto;
@@ -165,7 +165,18 @@ nav{
     z-index: 2;
 
 }
-@media (max-width:768px) {
+@media screen and (min-width:1000px){
+    .carousel-caption{
+        height: 20vh;
+        top:65%;
+    }
+
+    .carousel-caption h1, p{
+        text-align: center;
+        padding: 0;
+    }
+}
+@media (max-width:680px) {
    
     #travel-slides{
         opacity: 0.9;
