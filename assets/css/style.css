@@ -6,12 +6,14 @@
 }
 html{
     scroll-behavior: smooth;
+
 }
 
 /* GLOBAL */
 a{
     text-decoration: none;
 }
+
 
 ul{
     list-style: none;
@@ -24,6 +26,7 @@ ul{
      min-height: 100vh;
      min-width: 100%;
  }
+
  img{
     height: auto;
     min-width: 100%;
@@ -34,28 +37,14 @@ h1,h2,h3,h4{
     font-family: 'Roboto' , sans-serif;
 }
 
+
 p{
-    color:#fff;
+    color:#6c757d;
+    line-height: 1.6;
+    font-size: 1.2em;
 }
 /* MAIN NAVIGATION */
 
-header{
-    width: 100%;
-    padding: 1em 0;
-    background:#fff;
-    text-align: center;
-    position: fixed;  
-    z-index: 999;
-}
-
-.brand{
-  font-style: italic;
-  font-weight: 400;
-  color: #333;
-  font-size: 1.5em;
-  float: left;
-  margin-left: 1em;
-}
 
 .nav-brand i .fa{
     font-size: 1.8em;
@@ -111,12 +100,10 @@ nav{
   
 }
 
-#travel-slides h1{
-    font-size: 2em;
+.carousel-caption h1{
     text-align: center;
-    padding-bottom: 0.5em;
-    letter-spacing: 1.5;
-    line-height: 1.5;
+    padding-bottom: 0;
+    letter-spacing: 1.6;
 }
 
  .btn-login{
@@ -154,26 +141,35 @@ nav{
     background-color: #e84610;
 }
 .carousel-caption{
-    bottom: 100px;
-    width: 40%;
+    width: 50%;
     height: 30vh;
     background: rgba(0,0,20,0.8);
      position: absolute;
-     top: 75%;
+     top: 80%;
      left: 50%;
+     line-height: 1.1;
      transform: translate(-50%, -50%);
     z-index: 2;
 
 }
+
+.carousel-caption p{
+    color: #fff;
+    padding: -1em 0 1em 0;
+}
 @media screen and (min-width:1000px){
     .carousel-caption{
-        height: 20vh;
-        top:65%;
+        height: 30vh;
+        top:80%;
+
     }
 
     .carousel-caption h1, p{
         text-align: center;
         padding: 0;
+        line-height: 1.2;
+        letter-spacing: 1.6;
+        vertical-align: middle;
     }
 }
 @media (max-width:680px) {
@@ -190,9 +186,8 @@ nav{
 
    
     .carousel-caption h1{
-        font-weight: 900;
+       font-size: 1.2em;
        text-align: center;
-       font-size: 1.4em!important;
        font-style: italic;
        padding: 0;
        margin: 0 auto;
@@ -207,7 +202,7 @@ nav{
 
 /* ÑEWSLETTER SECTION */
 .newsletter{
-    padding: 60px 0px;
+    padding: 50px 0px;
     text-align: center;
     color: #fff;
     background:rgba(0,0,20,0.8);
@@ -219,6 +214,7 @@ nav{
     font-style: italic;
     padding: 0px;
     margin: 1em 0px 2em;
+    color: #fff;
 }
 
 
@@ -239,7 +235,7 @@ nav{
     position: absolute;
     top: 0;
     bottom: 0;
-    right: -2;
+    right: -1;
     font-size: 1em;
     font-weight: 600;
     padding: 0 1.5em;
@@ -262,23 +258,35 @@ nav{
     .newsletter{
         padding: 30px;
     }
+    
+    .newsletter h2{
+        margin-bottom: 0;
+        padding: 0;
+        font-size: 1em!important;
+    }
+
+    .newsletter p{
+        display: none!important;
+    }
 
 }
 
 /* ABOUT SECTION */
 #about{
     background: #fff;
-    color:#000;
     display:block;
-    margin: 0 auto;
-    margin-left: 1em;
-    padding:2em 1em;
+    max-width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto
+
 }
-#about p{
+#about .about-text p{
     padding-top: 0.5em;
-    color: #000;
-    line-height: 1.5;
-    margin: 3em 2em;
+    line-height: 160%;
+    margin: 3em auto;
+    padding: 0 1em;
 
 }
 #about .img-fluid{
@@ -308,7 +316,7 @@ nav{
 }
 
 .btn-about{
-    display: inline-block;
+    position: relative;
     font-size: 14px;
     line-height: 160%;
     text-decoration: none;
@@ -333,29 +341,28 @@ nav{
 }
 
 @media(min-width:768px){
-       #about .content-about p{
+       #about .about-text p{
         margin-top: 0;
-        padding: 2em;
+        width: 100%;
+        padding: 0;
      
     }
 }
 
 @media screen and (max-width:600px){
     #about .content-about p{
-        padding: 0 1.5em;
-        margin: 0 1em 1em 1em;
-        width: 100%;
-        font-size: 20px;
+        padding: 1em;
+        margin: 0 1em;
+        font-size: 15px;
+    
     }
 
     #about h3{
-        margin:1em 1em 0 1em;
+        margin:1em 1em 0 .5em;
         font-size: 1.5em;
     }
 
-    #about .about-btn{
-        margin:0 auto;
-    }
+   
 }
 
 
@@ -365,6 +372,7 @@ nav{
     margin: 0 auto;
 }
 #tours h3{
+    font-size: 2em;
     text-transform: capitalize;
     text-align: center;
     color: #000;
@@ -373,6 +381,7 @@ nav{
 
 #tours h4{
     text-transform: uppercase;
+    font-size: 1.5em;
 }
 
 
@@ -446,6 +455,14 @@ nav{
     transition: .8s;
 }
 
+.book-btn:hover{
+   text-decoration: none!important;
+   color:#fff;
+}
+
+
+
+
 /* USER FEEDBACK */
 
 .user-feedback{
@@ -466,6 +483,7 @@ nav{
 .user-review p{
     padding:1.5em;
     color: #000;
+    line-height: 1.5;
 }
 
 .user-review img{
@@ -476,6 +494,11 @@ nav{
 .user-feedback h3{
     text-align: center;
     margin: 1.5em 0;
+    
+}
+.user-feedback h4{
+    font-size: 1em;
+    color:#6c757d;
 }
 
 /* GALLERY SECTION */
@@ -486,8 +509,8 @@ nav{
 }
 
 #gallery{
-    padding: 2em 1em;
-    margin: 0 auto;
+    padding: 3em 1em;
+    margin: 2em auto;
     text-align: center;
 }
 
@@ -501,10 +524,10 @@ nav{
 
 #contact{
     max-width: 768px;
-    margin: 6em auto;
+    margin: 10em auto;
     position: relative;
     box-shadow: 2px 10px 20px 2px #888;
-    padding:20px  40px;
+    padding:2em 0;
     
 }
 
