@@ -7,34 +7,42 @@
 This is a fictional travel website based in Uganda.IMobile first approach design be  fully responsive and accessible on a range of devices, making it easy to navigate for potential clients.
 
 
-## Table of contents
+# Table of contents
 
-1. [**USER_EXPERIENCE**](#user-experience)
-    - [**Scope**](#scope)
-    - [**Structure**](#structure)
-    - [**Skeleton**](#skeleton)
-    - [**Surface**](#surface)
-    
-2. [**Features**](#features)
-    - [**Existing features**](#existing-features)
-    - [**Features left to implement**](#features-left-to-implement)
+## UX
+1. Project Goals
+2. User Goals
+### User Stories
+   - first time visitor Goals
+   - frequent visitor goals
+#### Returning visitor goals
+* User  Requirements & expectations
+## Design choices
+   * Colors
+   * Fonts
+   * icons
+## Features
+    *Existing features*
+    *Features that need to be implemented in the future*
+## Technologies 
 
-3. [**Technologies Used**](#technologies-used)
-
-4. [**Testing**](#testing)
-    - [**Testing documentation can be found here in a seperate file**](TESTING.md)
-
-5. [**Deployment**](#deployment)
-
-6. [**Credits**](#credits)
-    - [**Content**](#content)
-    - [**Resources**](#resources)
-    - [**Media**](#media)
-    - [**Acknowledgements**](#acknowledgements)
+##  Testing
+## Deployment
+## Credits
+    * content
+    * Resources
+    * Media
+    * Acknowledgements
 
 ## User Experience (UX)
-## 
+* Project Goals
+The  **aim** of this project is to bring relevant information to people who are insterested in travelling within african countries. Where by everything is catered for. from flight , hotel and activities.
 
+* User Goals
+  * find information about the tours available.
+  * look at the images of the destinations possible.
+  * contact the agency through email and phone number.
+  * subscribe for the newsletter to learn about seasonal offers.
 -   ### User stories
 
     -   #### First Time Visitor Goals
@@ -51,22 +59,26 @@ This is a fictional travel website based in Uganda.IMobile first approach design
        -  a. As a frequent user i want to be able to see latest promotions.
        -  b.  As a frequent User i want to signup to the newsletter so that i am updated about new propositions.
 
--   ### Design
+-   ### Design choices
     -   #### Colour Scheme
+     ![colour scheme](assets/images/uga-tours.jpg)
       I decided to choose a subtle color scheme, several shades of grey. easy on the eyes with a modern touch.
-       - 
-       - #182c39 - This grey colour is used for the logo icon, button hover backgrounds, footer background and text-color in the contact section..
-       - #4a4a4a -this shade of grey is used in the newsletter subscribe button in its hover state as a background color
-       - #e84d1b-This orange colour is used in the login button in the header section,subscribe button in the newsletter section &submit button in the contact section.
-       - #f4f4fa -this shade of grey is used in the  user feedback background section.
-       - #888888 - this shade of grey is used for the box shadows on the user reviews container and contact container.
-       - #fff -white is used for footer fonts and icons, fonts on the promotion section and booking buttons on tours section.
-        - #000 - i used black for paragraphs in the about section and for the nav-links
+        
+       * #182c39 - This grey colour is used for the logo icon, button hover backgrounds, footer background and text-color in the contact section..
+       * #4a4a4a -this shade of grey is used in the newsletter subscribe button in its hover state as a background color
+       * #e84d1b-This orange colour is used in the login button in the header section,subscribe button in the newsletter section &submit button in the contact section.
+       * #f4f4fa -this shade of grey is used in the  user feedback background section.
+       * #888888 - this shade of grey is used for the box shadows on the user reviews container and contact container.
+       * #fff -white is used for footer fonts and icons, fonts on the promotion section and booking buttons on tours section.
+       *  #000 - i used black  for the nav-links
     -   #### Typography
+    * fonts used are Roboto for headings and Open sans for paragraghs.
         - 
 ```html
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:ital,wght@0,100;0,300;0,700;0,900;1,900&display=swap">
 ```
+* Icons 
+  * icons used where provided by [Font Awesome](https://fontawesome.com/)
     -   #### Imagery
         
        - All images used are from pexels and unsplash.        
@@ -80,10 +92,19 @@ This is a fictional travel website based in Uganda.IMobile first approach design
     -   Desktop Wireframe - ![desktop](assets/images/desktop.png)
 
 ## Features
+* Existing features
+* easy to use  navigation for  all device sizes.
+*  Sign in button with a pop up form.
+* attractive and unique design.
+*  social media links.
+* booking buttons.
 
--   Responsive on all device sizes
-
--   Interactive elements
+* Features for future implementation
+  * animated burger menu for small devices.
+  * more back end functionality.
+  * blog section
+  * chat area.
+  * travel video
 
 ## Technologies Used
 ### Languages Used
@@ -106,7 +127,8 @@ This is a fictional travel website based in Uganda.IMobile first approach design
     - GitHub is used to store the projects code after being pushed from Git.
 1. [Balsamiq:](https://balsamiq.com/)
     - Balsamiq was used to create the [wireframes](https://github.com/) during the design process.
-
+1. [canva](https://www.canva.com/)
+    - Canva was used to create the color scheme.
 ## Testing
 
 The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
@@ -124,7 +146,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 ### Further Testing
 
 -   The Website was tested on Google Chrome, Internet Explorer, Microsoft Edge and Safari browsers.
--   The website was viewed on a variety of devices such as Desktop, Laptop, tablette,iPhone6/7/8 & iPhoneX.
+-   The website was viewed on a variety of devices such as Desktop, Laptop, Surface Duo,Moto G4,iPhone6/7/8 & iPhoneX .
 -   Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
 
 ### Known Bugs
@@ -135,7 +157,11 @@ had to add in some padding to space them eaqually.
 - hover on images, blocks out some content- had to use hover-css and change the class.
 -issue with open tags not being closed thereby misaligment of content.
 - on mobile screen navigation menu opens on top on slider images.. due to class fixed-top.(changed fixed-top to sticky-top)
-
+- over lay text on slider images not well balanced ..i had to used media queries.
+- footer a links opening on the same page... i had to fix the target blank attribute.
+- further issues with positioning and padding.
+- on performance issues i had to inclue some links at the head of html to improve its performance.
+- image sizes were too big thereby needed to be compressed for faster loading speed.
 ## Deployment
 
 ### GitHub Pages
@@ -208,7 +234,7 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 ### Acknowledgements
 
 -   My Mentor for continuous helpful feedback.
--   Full stack Wattsapp group
--  Tutor support
--  Slack
+-   Full stack Wattsapp group for the positive feeback and encouragement.
+-  Tutor support for solving techincal issues with gitpod.
+-  Slack for always having an answer when i needed it.
 

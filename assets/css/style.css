@@ -6,6 +6,7 @@
 }
 html{
     scroll-behavior: smooth;
+    
 
 }
 
@@ -21,8 +22,7 @@ ul{
  body{
      background:#fff;
      font-family: 'Open Sans' , sans-serif;
-     line-height: 1.5;
-     letter-spacing: 1.2;
+     line-height: 1.5em;
      min-height: 100vh;
      min-width: 100%;
  }
@@ -40,7 +40,7 @@ h1,h2,h3,h4{
 
 p{
     color:#6c757d;
-    line-height: 1.6;
+    line-height: 1.6em;
     font-size: 1.2em;
 }
 /* MAIN NAVIGATION */
@@ -49,13 +49,12 @@ p{
 .nav-brand i .fa{
     font-size: 1.8em;
     color:slategrey;
-
 }
-
 
 nav{
     margin: 0;
 }
+
 .nav-item{
     margin-left: 1em;
 
@@ -67,7 +66,11 @@ nav{
     padding: .5rem 1rem;
     text-transform: uppercase;
     font-weight: 400;
-  
+}
+.sticky-top{
+    position: sticky;
+    top: 0;
+    z-index: 1020;
 }
 
 
@@ -76,20 +79,11 @@ nav{
     }
 
 .navbar-toggler {
-    color: black;
+  color: #000;
   border: none;
   background: transparent !important;
 }
-.navbar-toggle:checked {
-  border: none;
-  background: transparent !important;}
 
-
-@media screen and(max-width:500){
-    .nav-link{
-        margin-bottom: 2em;
-    }
-}
 
 /* SLIDER HERO IMAGE */
 #travel-slides{
@@ -97,13 +91,11 @@ nav{
     min-width: 100%;
     overflow: hidden;
     opacity: 0.9;
-  
 }
 
 .carousel-caption h1{
     text-align: center;
     padding-bottom: 0;
-    letter-spacing: 1.6;
 }
 
  .btn-login{
@@ -124,7 +116,6 @@ nav{
     background: #fff;
 }
 
-
 .carousel-indicators li {
     display: inline-block;
     width: 70px;
@@ -134,18 +125,20 @@ nav{
     border: none;
     background-color: #0000ff;   
 }
+
 .carousel-indicators .active {
     width: 70px;
     height: 5px;
     margin: 10px;
     background-color: #e84610;
 }
+
 .carousel-caption{
     width: 50%;
     height: 30vh;
     background: rgba(0,0,20,0.8);
      position: absolute;
-     top: 80%;
+     top: 50%;
      left: 50%;
      line-height: 1.1;
      transform: translate(-50%, -50%);
@@ -157,48 +150,12 @@ nav{
     color: #fff;
     padding: -1em 0 1em 0;
 }
-@media screen and (min-width:1000px){
-    .carousel-caption{
-        height: 30vh;
-        top:80%;
 
-    }
-
-    .carousel-caption h1, p{
-        text-align: center;
-        padding: 0;
-        line-height: 1.2;
-        letter-spacing: 1.6;
-        vertical-align: middle;
-    }
+.carousel-control-next-icon,
+.carousel-control-prev-icon{
+    filter: invert(1);
 }
-@media (max-width:680px) {
-   
-    #travel-slides{
-        opacity: 0.9;
-    }
-    .carousel-caption{
-        width:80%;
-        height: 10vh;
-        background: rgba(0,0,0,0.8);
-        top:70%;
-    }
 
-   
-    .carousel-caption h1{
-       font-size: 1.2em;
-       text-align: center;
-       font-style: italic;
-       padding: 0;
-       margin: 0 auto;
-        
-    }
-    .carousel-caption p{
-     display: none;
-    }
-
-    
-}
 
 /* ÑEWSLETTER SECTION */
 .newsletter{
@@ -239,7 +196,7 @@ nav{
     font-size: 1em;
     font-weight: 600;
     padding: 0 1.5em;
-    background: #e84d1b;
+    background: #e84d1d;
     color: #fff;
     border: 1px solid #fff;
     border-radius: 40px;
@@ -254,22 +211,6 @@ nav{
     border-left: .5px solid #4a4a4a;
 }
 
-@media screen and(max-width:600px){
-    .newsletter{
-        padding: 30px;
-    }
-    
-    .newsletter h2{
-        margin-bottom: 0;
-        padding: 0;
-        font-size: 1em!important;
-    }
-
-    .newsletter p{
-        display: none!important;
-    }
-
-}
 
 /* ABOUT SECTION */
 #about{
@@ -308,7 +249,7 @@ nav{
 }
 .short-line-divider{
     width: 15%;
-    background: #e84610;
+    background: #e84d1d;
     height: 2px;
     margin: 0 auto;
     border-radius: 2px;
@@ -340,31 +281,6 @@ nav{
     text-decoration: none;
 }
 
-@media(min-width:768px){
-       #about .about-text p{
-        margin-top: 0;
-        width: 100%;
-        padding: 0;
-     
-    }
-}
-
-@media screen and (max-width:600px){
-    #about .content-about p{
-        padding: 1em;
-        margin: 0 1em;
-        font-size: 15px;
-    
-    }
-
-    #about h3{
-        margin:1em 1em 0 .5em;
-        font-size: 1.5em;
-    }
-
-   
-}
-
 
 /* TOURS SECTION */
 #tours{
@@ -385,16 +301,17 @@ nav{
 }
 
 
-#tours .price{
+#tours .price .lead{
     font-weight: 600;
+    text-align: left;
 }
 .rating{
     float: left;
-    margin-right: 30px;
+    margin-right: 1.5em;
 }
 
 .rating .fa{
-    color:#e84610;
+    color:#e84d1d;
 
 }
 
@@ -416,11 +333,7 @@ nav{
     text-decoration: none;
 }
 
-@media screen and(max-width:600px){
-    .booking-btn{
-        margin-bottom: 10em;
-    }
-}
+
 /* PROMOTION SECTION */
 .promotion{
     height: 80%;
@@ -459,8 +372,6 @@ nav{
    text-decoration: none!important;
    color:#fff;
 }
-
-
 
 
 /* USER FEEDBACK */
@@ -531,11 +442,11 @@ nav{
     
 }
 
-.contact-title{
-    font-size: 2em;
+.contact-title h3{
+    font-size: 1.5em;
     color: #182c39;
-    padding-bottom: 1em;
-    margin:1em 0;
+    padding-bottom: 2em;
+    margin:1em auto;
     line-height: 1.2;
     text-align: center;
     text-decoration: uppercase;
@@ -576,7 +487,7 @@ nav{
 
 .submit-btn{
     display:block;
-    background: #e84610;
+    background: #e84d1d;
     color: #fff;
     font-size: 1em;
     font-weight: 600;
@@ -592,24 +503,10 @@ nav{
 }
 
 .submit-btn:hover{
-    color: #e84610;
+    color: #e84d1d;
     background: #fff;
-    border: 1px solid #e84610;
+    border: 1px solid #e84d1d;
 }
-
-@media screen and(max-width:500px){
-    #contact{
-       max-width:500px;
-       margin:0 auto;
-       padding: 10px 20px;
-    }
-
-    .contact-title{
-         padding-bottom: 0;
-         margin-bottom: 0;
-    }
-}
-
 
 /* SOCIAL ICONS */
 .social-networks{
@@ -618,9 +515,7 @@ nav{
     margin-bottom: 0!important;
 }
 
-.social h4{
-    margin: 2em 1em;
-}
+
 
 
 /* FOOTER */
@@ -660,7 +555,7 @@ nav{
     font-size: 30px;
 }
 
-.footer h5{
+.footer h4{
     text-transform: uppercase;
     margin-top:0.938em;
     margin-bottom:1.6em;
@@ -675,8 +570,106 @@ nav{
     background: none!important;
 }
 
+/* MEDIA QUERIES */
 
+@media screen and (min-width:1000px){
+    .carousel-caption{
+        height: 20vh;
+        top:60%;
+        padding: 2em 0;
 
+    }
+
+    .carousel-caption h1, p{
+        text-align: center;
+        padding: 0;
+        line-height: 1.2;
+        letter-spacing: 1.6;
+        vertical-align: middle;
+    }
+}
+
+@media (max-width:768px) {
+    .nav-link{
+        margin-bottom: 2em;
+    }
+
+     .newsletter{
+        padding: 30px;
+    }
     
+    .newsletter h2{
+        margin-bottom: 1em;
+        text-transform: capitalize;
+        padding: 0;
+        font-size: 1.2em;
+    }
 
+    .newsletter p{
+        display: none;
+    }
+
+
+
+     .booking-btn{
+        margin-bottom: 10em;
+    }
+   
+    #travel-slides{
+        opacity: 0.9;
+    }
+    .carousel-caption{
+        width:80%;
+        height: 16vh;
+        background: rgba(0,0,0,0.6);
+        top:70%;
+    }
+
+    .carousel-caption h1{
+       font-size: 1.2em;
+       text-align: center;
+       font-style: italic;
+       line-height: 1em;
+       padding:0;
+       margin: 0 auto;
+        
+    }
+
+    .carousel-caption p{
+        display: none;
+    }
+
+    #about .content-about p{
+        padding: 1em;
+        margin: 0 1em;
+        font-size: 15px;
+    
+    }
+
+    #about h3{
+        margin:1em 1em 0 .5em;
+        font-size: 1.5em;
+    }
+
+    #contact{
+       max-width:500px;
+       margin:0 auto;
+       padding: 10px 20px;
+    }
+
+    .contact-title h3{
+         padding-bottom: 0;
+         margin-bottom: 0;
+    } 
+}  
+
+
+@media(min-width:768px){
+       #about .about-text p{
+        margin-top: 0;
+        width: 100%;
+        padding: 0;
+     
+    }
+}
 
