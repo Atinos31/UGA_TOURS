@@ -1,7 +1,7 @@
 <h1 align="left">UGA TOURS</h1>
 ## User-Centric  Frontend Development Milestone Project.
 
-![display from differnt screen shots](assets/images/uga-tours.png)
+![display from differnt screen shots](assets/images/mockup2.png)
 
 ## [View the live project here.](https://atinos31.github.io/UGA_TOURS/)
 ---
