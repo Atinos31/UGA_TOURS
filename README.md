@@ -71,6 +71,7 @@ I used balsamiq to create the wireframes.
 - ![tablette wireframe](assets/images/desktop.png)
 
 - ![desktop wireframe](assets/images/desktop.png)
+- ![complete photo](assets/images/complete.png)
 
 ## Surface
 
