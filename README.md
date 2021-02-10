@@ -210,8 +210,8 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 - image sizes were too big thereby needed to be compressed for faster loading speed and resizing them.
 - footer had some white space below, fixed it with > bottom: 150px; and position:absolute;
 - too much white space between sections - fixed with less margin-top.
-
-
+- issues with too much white space  and overflowing submit button in contact section as observed by my mentor - i had to reduce on the padding and margins ,then for the submit button, i had to remove the width attribute.-
+- subscribe button in the newsletter section ,not responsive
 # Deployment
 
 ### GitHub Pages

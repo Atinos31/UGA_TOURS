@@ -192,6 +192,7 @@ nav{
     border: 0;
     padding: 4px 8px;
     width: calc(100% - 100px);
+    
 }
 .newsletter form input[type="submit"] {
     position: absolute;
@@ -200,7 +201,7 @@ nav{
     right: 0;
     font-size: 1em;
     font-weight: 600;
-    padding: 0 1.5em;
+    padding: 0 1.2em;
     background: #e84d1d;
     color: #fff;
     border: 1px solid #fff;
@@ -322,7 +323,7 @@ nav{
 
 .booking-btn{
     margin-top:2em;
-    margin-bottom: 6em;
+    margin-bottom: 2em;
     display:block;
     padding: 1em 3em;
     color:#fff;
@@ -382,7 +383,7 @@ nav{
 /* USER FEEDBACK */
 
 .user-feedback{
-    padding: 6em 0;
+    padding: 2em 0;
     background:#f4f4f4;
     
 }
@@ -425,7 +426,7 @@ nav{
 }
 
 #gallery{
-    padding: 2em 1em;
+    padding: 0.4em 1em;
     margin: 1em auto;
     text-align: center;
 }
@@ -496,10 +497,9 @@ nav{
     color: #fff;
     font-size: 1em;
     font-weight: 600;
-    padding: 1em 2.5em;
+    padding: 1em 3em;
     border-radius: 8px;
     margin: 0 auto;
-    width: 300px;
     text-align: center;
     align-items: center;
     cursor: pointer;
@@ -596,8 +596,9 @@ nav{
 }
 
 @media (max-width:768px) {
-    .nav-link{
-        margin-bottom: 2em;
+      .nav-link {
+    margin-bottom: 1em;
+    text-align: right;
     }
 
      .newsletter{
