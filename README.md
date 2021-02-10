@@ -50,7 +50,7 @@ This is a fictional travel website based in Uganda.Mobile first approach design 
 - As a first time visitor ,i want to check out what users think about the site's services.
 
 ### Returning User Goals
-- As a returning visitor i want to be able to reachout for more information when need.
+- As a returning visitor i want to be able to reachout for more information when needed.
 - As a returning visitor i want to be able to see the latest offers available.
 - As a returning visitor i want to be able to sign in to the site.
 
