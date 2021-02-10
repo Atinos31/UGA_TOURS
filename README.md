@@ -50,7 +50,7 @@ This is a fictional travel website based in Uganda.Mobile first approach design 
 - As a first time visitor ,i want to check out what users think about the site's services.
 
 ### Returning User Goals
-- As a returning visitor i want to be able to reachout for more information when need.
+- As a returning visitor i want to be able to reachout for more information when needed.
 - As a returning visitor i want to be able to see the latest offers available.
 - As a returning visitor i want to be able to sign in to the site.
 
@@ -117,7 +117,8 @@ I decided to choose a subtle color scheme, several shades of grey. easy on the e
  The footer is positioned at the bottom of the page and it contains:
   * quick links
   * contact
-  * map
+  * social media links
+  * copyright  and link to github.
 
 ## home 
  * slider section consist of three slider images and persuasive heading and paragragh.
