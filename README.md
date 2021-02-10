@@ -116,7 +116,8 @@ I decided to choose a subtle color scheme, several shades of grey. easy on the e
  The footer is positioned at the bottom of the page and it contains:
   * quick links
   * contact
-  * map
+  * social media links
+  * copyright  and link to github.
 
 ## home 
  * slider section consist of three slider images and persuasive heading and paragragh.
